@@ -1,0 +1,33 @@
+{
+    "name": "videni/pcr-shell",
+    "description": "中国全国最新省市区三级数据处理脚本",
+    "type": "library",
+    "keywords": [ "省市区处理脚本"],
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Vidy Videni",
+            "homepage": "http://www.videni.org"
+        }
+    ],
+    "require": {
+        "videni/pcr":"dev-master",
+        "symfony/console": "~3.0",
+        "phpoffice/phpexcel": "~1.8",
+        "doctrine/common": "~2.2",
+        "doctrine/dbal": "~2.2"
+    },
+    "bin": ["bin/pcr"],
+    "repositories": [
+        {
+            "url": "https://github.com/videni/pcr.git",
+            "type": "vcs"
+        }
+     ],
+    "autoload": {
+        "psr-4": {"Pcr\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    }
+}
