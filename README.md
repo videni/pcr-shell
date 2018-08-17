@@ -11,8 +11,7 @@
     composer install
     
 2. 导入到sqlite数据库中    
-    ./Resource/bin/pcr pcr:sliqte  
-
+ ./Resources/bin/pcr pcr:sqlite
 3. 现在，在var目录，你能找到pcr.sqlite文件。
 
 # 下一步
